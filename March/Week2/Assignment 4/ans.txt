@@ -1,0 +1,80 @@
+What kind of checked or unchecked exception will the following programs throw, if any?
+
+public class Test 
+{
+
+	public static void main(String[] args) 
+{
+ 
+		int x = 10;
+ 
+		int y = 0;
+ 
+		int z = x / y;
+ 
+		System.out.println(z);
+  
+	}
+
+}
+Answer = It throws unchecked exception that is Arithmetic exception
+
+
+
+
+
+b) public class Test 
+{
+
+	public static void main(String[] args) 
+{        
+ 
+		byte num;
+ 
+		System.out.println("Scientech");
+  
+		num = Byte.parseByte("Easy");
+  
+		System.out.println("num: "+num);
+  
+	}
+
+}
+
+
+Answer = It throws unchecked exception
+
+
+c)What will be the output of the following program when run?
+
+
+public class Test 
+{
+
+	public static void main(String[] args)
+{                
+
+		try {
+ 
+			int value = 5;
+ 
+			if (value < 10)
+    
+			throw new RuntimeException("Value is less than 10");
+ 
+		}
+
+		catch (RuntimeException re) {
+   
+			System.out.println(re.getMessage());
+  
+		}
+		
+System.out.println("Outside try-catch block");        
+  
+	}
+
+}
+
+Answer = Value is less than 10
+	Outside try-catch block
